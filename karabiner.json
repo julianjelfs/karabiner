@@ -101,8 +101,8 @@
                                     }
                                 ],
                                 "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 200,
-                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
                                 },
                                 "type": "basic"
                             },
@@ -219,8 +219,8 @@
                                     }
                                 ],
                                 "parameters": {
-                                    "basic.to_if_alone_timeout_milliseconds": 200,
-                                    "basic.to_if_held_down_threshold_milliseconds": 200
+                                    "basic.to_if_alone_timeout_milliseconds": 300,
+                                    "basic.to_if_held_down_threshold_milliseconds": 300
                                 },
                                 "type": "basic"
                             },
@@ -348,6 +348,12 @@
                     }
                 ]
             },
+            "simple_modifications": [
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "escape" }]
+                }
+            ],
             "fn_function_keys": [
                 {
                     "from": { "key_code": "f6" },
